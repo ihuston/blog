@@ -161,14 +161,19 @@ Worse, though, is the example being set for people who are new to the craft. The
 
 Obviously, there are smart people who __do__ seek and find proper abstractions. Most of them (at least the ones I know personally)  share a common value: __empathy__. They all have empathy for their current teammates and future developers.
 
-This empathy for fellow developers can emerge in a number of ways. Perhaps the best known manifestation is Knuth's ["Literate Programming"][lp]:
+This empathy for fellow developers can emerge in a number of ways. Perhaps the best known manifestation is [Knuth][]'s ["Literate Programming"][lp]:
 
 > Let us change our traditional attitude to the construction of
 > programs: Instead of imagining that our main task is to instruct a
 > computer what to do, __let us concentrate rather on explaining to
 > human beings what we want a computer to do__.
 
-My own personal interpretation of Literate Programming is: prefer self-explanatory code over comments. I often urge my pairs to write test and code as if it were english, and thus drive out the right abstractions.
+Which is simply a restatement of [Hal Abelson][ha]'s famous quote:
+
+> “Programs must be written for people to read, and only incidentally
+> for machines to execute.”
+
+My own personal interpretation of Literate Programming is: prefer self-explanatory code over comments. I often urge my pairs to write tests and implementations as if it were English, and in so doing help drive out the right abstractions.
 
 That tactic is actually a variation on an idea presented in Eric Evans's ["Domain Driven Design"][ddd] philosophy, which is to use the language of the domain to articulate requirements as well as implement the code. As explained in his [book of the same name][dddbook]:
 
@@ -184,6 +189,15 @@ __We test-drive__, which forces us to think deeply about the proper abstractions
 __We pair program__, which forces us to explain, before the code gets committed, the reasoning and intentions behind the code. Explaining it to the person sitting next to you is the first step towards explaining it to future readers of your code.
 
 __We rotate frequently between teams__, meaning that we're almost always teaching someone the domain, the architecture, and the codebase. As a result, we are incentivized to make sure the code is understandable and abstracted correctly; and we feel acute pain around explaining poorly abstracted code.
+
+
+Generally speaking, these practices lower the threshold at which our brains might otherwise naturally seek for better abstractions. This is good! And it gets more important for people with greater computational abilities.
+
+__This is actually the reverse of most people's intuition__, which is (rather derogatorily) that Smart People don't need to follow the same practices as Ordinary People. Don't fall into this trap around testing and abstractions. If you think you're so smart, then consider Abstraction to be an act of _noblesse oblige_ for the rest of us.
+
+
+  [knuth]: https://en.wikipedia.org/wiki/Donald_Knuth
+  [ha]: https://groups.csail.mit.edu/mac/users/hal/hal.html
 
 
 ## ... And A Warning
