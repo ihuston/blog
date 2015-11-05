@@ -11,6 +11,14 @@ short: |
 title: Abstraction, or, The Gift of Our Weak Brains
 ---
 
+__TL;DR__:
+
+* Intelligent developers can, at times, fail to seek out better abstractions in their code.
+* But empathy for our peers drives us towards finding abstractions.
+* Better abstractions leads to better outcomes, and clearer problem-solving.
+* Pivotal uses specific practices to ensure we're always trying to find better abstractions in our code.
+
+
 ## Tale of a Prodigy
 
 There's a famous story about [John von Neumann][] and the ["Two Trains Puzzle"][2trains].
@@ -25,6 +33,8 @@ But there's a shortcut to the solution, which becomes obvious once you realize t
 2. and you're given the __fly's speed__.
 
 A simple velocity calculation later, and you have the answer.
+
+{{< responsive-figure src="/images/abstraction-or-the-gift-of-our-weak-brains/JohnvonNeumann-LosAlamos.gif" class="right small">}}
 
 According to <u>[The Legend of von Neumann][]</u>, here's what happened when the puzzle was posed to Von Neumann:
 
@@ -53,11 +63,11 @@ This was a huge source of pain and stress for me. I had never failed at anything
 
 Eventually, I hit a tipping point. Once I modeled the abstractions appropriately in my mind, I was able to reason about complex behavior as well or better than my peers. I suddenly started getting flashes of insight, and was able to leverage previous abstractions when solving take-home problems.
 
-This felt like a bit of a superpower. It felt like I had finally modeled the problem properly in my brain, and as a result was able to ignore extraneous details and solve the Big Picture problems.
+This felt like a bit of a superpower. It felt like I had finally modeled the problem properly in my brain, and as a result was able to identify patterns and solve Big Picture problems.
 
 Much later in life, I would read Hofstadter's <u>[Gödel, Escher, Bach][geb]</u> and realize I had metaprogrammed my brain for a particular domain, and it had allowed me to use abstractions as a first-class language for learning and reasoning.
 
-Why did I do this, when some people with higher IQs were perfectly capable of it, but didn't appear to be doing it? __Was it because the lack of abstractions was more painful for me than for them?__
+Why did I do this, when some people with higher IQs were perfectly capable of it, but didn't appear to be doing it? __Was it because the lack of abstractions caused more pain for me than for them?__
 
   [em]: https://en.wikipedia.org/wiki/Electromagnetism
   [cm]: https://en.wikipedia.org/wiki/Classical_mechanics
@@ -81,14 +91,15 @@ Recently, [Brian Skinner][] wrote an [amazing post][ribbonfarm] about how many o
 
 The discussion there is about how humans _choose to reason_ about electrons in an electric circuit, versus how electrons _actually_ behave.
 
-The key point being that electron behavior is actually so complicated, involving complex interactions between quantum probabilities, electromagnetic repulsion, and electric fields, that human brains are piteously underpowered to calculate what's going on.
+The key point being that electron behavior is actually so complicated, involving complex interactions between quantum probabilities, electromagnetic interactions, and macroscopic electric fields, that human brains are piteously underpowered to calculate what's going on in an individual atom.
 
-The net result, though, is that we model the __aggregate__ behavior of all the electrons in the circuit, versus modelling __each and every__ electron. And that statistical model works amazingly well in a wide variety of circumstances.
+The net result, though, is that we model the __aggregate__ behavior of all the electrons in the circuit, instead of modelling __each and every__ electron. And that statistical model works amazingly well in a wide variety of circumstances.
 
-Imagine an alien race with the cognitive faculties to calculate individual electron trajectories. Would those aliens fall back to the same abstraction? Or would they simply continue, as Von Neumann did, do do the calculations the hard way?
+Imagine an alien race with the cognitive faculties to calculate individual electron trajectories. Would those aliens fall back to the same abstraction? Or would they simply continue, as Von Neumann did, to do the calculations the hard way?
 
   [Brian Skinner]: http://www.ribbonfarm.com/author/brian/
   [ribbonfarm]: http://www.ribbonfarm.com/2015/10/29/quasiparticles-and-the-miracle-of-emergence/
+
 
 ## NASA's Voyager: Legacy Code Like You've Never Seen
 
@@ -99,13 +110,13 @@ What kind of problems do you think exist around such extreme legacy code? In an 
 > ... it's time to turn back to old documents to figure out the logic
 > behind some of the engineering decisions. Dodd says it's easy to
 > find the engineering decisions, but harder to find the
-> reasoning. This means combing through secondary documents and
-> correspondence hoping to find the solution, trying to get in another
+> reasoning. This means combing through __secondary documents and
+> correspondence__ hoping to find the solution, trying to get in another
 > engineer's head.
 
 Holy cow.
 
-I mean, I realize that the solution had severe constraints placed on it (miniscule processing power, and 64KB of RAM). But the situation being described sounds more serious than that.
+I mean, I realize that the solution had severe constraints placed on it (miniscule processing power, and 64KB of RAM). But the situation being described sounds like it's orthogonal to those constraints.
 
 > _"trying to get in another engineer's head."_
 
@@ -119,7 +130,7 @@ Wouldn't it have been easier if the relevant abstractions had been captured when
 
 ## The Impact of Ability on Developing Abstraction
 
-The repeating theme of these stories is: People seem to resort to developing the proper abstraction only when they hit the limit of their computational power.
+The repeating theme of these stories is: Humans develop the proper abstraction only when they hit the limit of their computational power.
 
 * John von Neumann didn't bother to look for a more elegant solution, because he was able to brute force an infinite series so easily.
 * I needed to develop useful abstractions in college, to compensate for my brain's relative lack of compute power.
@@ -137,29 +148,51 @@ Whoops.
 
 ## Complexity Without Empathy Considered Harmful
 
-Not every smart person I know suffers from a reluctance to find and exploit appropriate abstractions. Most of the people I know who strive for the right abstraction share a common value: __empathy__. They all have empathy for their current teammates and future developers.
+How are you, as one of the best and brightest, preparing for the inevitable day when someone less talented than you has to modify the software you wrote?
+
+Let's be honest and empathize that most people who currently have the title of "software developer" are not going to have the time, patience, or talent to wade through spaghetti code with dependencies pointed in the wrong direction, with poorly-named variables, and with poor test coverage. Just like the Voyager software, there will be a legacy of unknowables in the code, and that's not good for anybody.
+
+Worse, though, is the example being set for people who are new to the craft. There's a self-perpetuating cycle here, particularly given that very few developers have any sort of exposure to the "team sport" that is growing and maintaining large software systems. If all I see when I look around is poorly-abstracted software, then are you surprised when I generate code of the same quality?
+
+(This, by the way, is why I feel strongly that most colleges and universities are cheating their CS grads by not preparing them for a career working in large, complex teams on large, complex projects.)
+
+
+## How To Do Better
+
+Obviously, there are smart people who __do__ seek and find proper abstractions. Most of them (at least the ones I know personally)  share a common value: __empathy__. They all have empathy for their current teammates and future developers.
 
 This empathy for fellow developers can emerge in a number of ways. Perhaps the best known manifestation is Knuth's ["Literate Programming"][lp]:
 
 > Let us change our traditional attitude to the construction of
 > programs: Instead of imagining that our main task is to instruct a
-> computer what to do, let us concentrate rather on explaining to
-> human beings what we want a computer to do.
+> computer what to do, __let us concentrate rather on explaining to
+> human beings what we want a computer to do__.
 
-Another great example is Eric Evans's ["Domain Driven Design"][ddd] (as explained in his [book of the same name][dddbook])
+My own personal interpretation of Literate Programming is: prefer self-explanatory code over comments. I often urge my pairs to write test and code as if it were english, and thus drive out the right abstractions.
+
+That tactic is actually a variation on an idea presented in Eric Evans's ["Domain Driven Design"][ddd] philosophy, which is to use the language of the domain to articulate requirements as well as implement the code. As explained in his [book of the same name][dddbook]:
 
 > A domain model ... is not just the knowledge in a domain expert's
-> head; it is a rigorously organized and selective abstraction of that
-> knowledge. ... The model is the backbone of a language used by all
-> team members.
+> head; it is a __rigorously organized and selective abstraction of
+> that knowledge__. ... The model is the backbone of a language used
+> by all team members.
 
 At Pivotal, empathy takes form in our engineering practices.
 
-__We test-drive__, which forces us to think deeply about the proper abstractions in the code as we're writing it.
+__We test-drive__, which forces us to think deeply about the proper abstractions in the code as we're writing it. Testing first generally drives out better design; and allows us to safely introduce or change the abstractions later.
 
-__We pair program__, which forces us to explain, before the code gets committed, the reasoning and intentions behind the code.
+__We pair program__, which forces us to explain, before the code gets committed, the reasoning and intentions behind the code. Explaining it to the person sitting next to you is the first step towards explaining it to future readers of your code.
 
-__We rotate frequently between teams__, meaning that we're almost always teaching someone a new domain and codebase, and so we are incentivized to make sure the code is understandable and abstracted correctly; and we feel acute pain around explaining poorly abstracted code.
+__We rotate frequently between teams__, meaning that we're almost always teaching someone the domain, the architecture, and the codebase. As a result, we are incentivized to make sure the code is understandable and abstracted correctly; and we feel acute pain around explaining poorly abstracted code.
+
+
+## ... And A Warning
+
+You get to choose what you spend your brain's CPU cycles on. Well-abstracted code is easier to reason about and safer to change. If your brain is occupied with poorly-abstracted details, you're going to miss opportunities for creative problem solving, and you won't get the flashes of insight that can be critical to solving problems well.
+
+Smart people who claim to not need practices are often productive ... alone. But software (and life) is a team sport. So even if you won't find good abstractions for your own sake, do it for your fellow developers. They'll thank you for it.
+
+Our brains are naturally limited. This can be a curse, or it can be a gift, depending on how you look at it.
 
 
   [lp]: http://www.literateprogramming.com/knuthweb.pdf
