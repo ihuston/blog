@@ -51,27 +51,6 @@ __Why didn't Von Neumann see and use the shortcut?__ Was it easier for him to do
   [The Legend of von Neumann]: https://www.jstor.org/stable/2319080
 
 
-## A Tale of a Non-Prodigy
-
-When I was studying physics in college, I felt pretty dumb for a long time. For the first time in my life, I was surrounded by people who were smarter than I was, and who were able to grok complex systems and perform elaborate calculations more quickly than I could.
-
-I'm pretty sure everyone else thought I was dumb, too. I needed study partners, and lots of topics I just ... didn't ... get. I struggled hard to try to understand [Classical Mechanics][cm], [E&M][em], and [Quantum Mechanics][qm]. I almost failed [Diff EQ][de].
-
-This was a huge source of pain and stress for me. I had never failed at anything before. And so I struggled, _hard_, to find a better way to learn these concepts and internalize their lessons. I spent a lot of time and effort trying (and discarding) various paradigms to intuitively explain complex systems.
-
-Eventually, for any domain, I hit a tipping point. Once I modeled the appropriate abstractions in my mind, I was able to reason about complex behavior as well (or better) than my peers. I started getting flashes of insight, and was able to leverage previous abstractions when solving take-home problems.
-
-This felt like a bit of a superpower. Much later in life, I would read Hofstadter's <u>[Gödel, Escher, Bach][geb]</u> and realize I had metaprogrammed my brain for a particular domain, which allowed me to use abstractions as a first-class language for learning and reasoning. As a result I was able to identify patterns more quickly and use intuition to solve problems more easily.
-
-Why did I do this, when some people with higher IQs were perfectly capable of it, but didn't appear to be doing it? __Was it because the lack of abstractions caused more pain for me than for them?__
-
-  [em]: https://en.wikipedia.org/wiki/Electromagnetism
-  [cm]: https://en.wikipedia.org/wiki/Classical_mechanics
-  [qm]: https://en.wikipedia.org/wiki/Quantum_mechanics
-  [de]: https://en.wikipedia.org/wiki/Differential_equation
-  [geb]: http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567
-
-
 ## The History of Science is a History of Abstractions
 
 Recently, [Brian Skinner][] wrote an [amazing post][ribbonfarm] about how many of our scientific observations are a direct result of humans seeking to find intuitive abstractions to explain complex phenomena:
@@ -129,7 +108,6 @@ Wouldn't it have been easier if the relevant abstractions had been captured when
 These stories anecdotally support a hypothesis: Humans develop the proper abstraction only when they hit the limit of their computational power.
 
 * John von Neumann didn't bother to look for a more elegant solution, because he was able to brute force an infinite series so easily.
-* I was forced to develop useful abstractions in college, to compensate for my brain's relative lack of compute power.
 * When science exceeds the physiological limits of our brains' capabilities, scientists seek and find appropriate abstractions that allow civilization to advance.
 * And NASA computer scientists (perhaps some of the smartest, most exacting and meticulous people assembled since the Manhattan Project)  write code that is so inscrutable that modern-day maintainers are forced to read the authors' mail to figure out what the hell the software was intended to do.
 
