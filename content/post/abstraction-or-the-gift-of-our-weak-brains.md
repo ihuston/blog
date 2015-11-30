@@ -122,7 +122,7 @@ And that's OK. Except for when you have to deal with other people. Which is prob
 
 How are you, as one of the best and brightest, preparing for the inevitable day when someone less talented than you has to modify the software you wrote?
 
-Let's be honest and empathize that most people who currently have the title of "software developer" are not going to have the time, patience, or talent to wade through spaghetti code with dependencies pointed in the wrong direction, with poorly-named variables, and with poor test coverage. Just like the Voyager software, there may always be a legacy of unknowables in the code, and that's not good for anybody.
+Let's be honest and empathize that most people who currently have the title of "software developer" are not going to have the time, patience, or talent to wade through spaghetti code with dependencies pointed in the wrong direction, with poorly-named variables, and with poor test coverage.
 
 Worse, though, is the example being set for people who are new to the craft. There's a self-perpetuating cycle here, particularly given that very few developers have any sort of exposure to the "team sport" that is growing and maintaining large software systems. If all I see when I look around is poorly-abstracted software, then are you surprised when I generate code of the same quality?
 
