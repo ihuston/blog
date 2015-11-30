@@ -32,7 +32,7 @@ The hard way to solve this problem is to [generate an infinite series][2trains] 
 
 A simple velocity calculation later, and you have the answer.
 
-{{< responsive-figure src="/images/abstraction-or-the-gift-of-our-weak-brains/JohnvonNeumann-LosAlamos.gif" class="right small">}}
+{{< figure src="/images/abstraction-or-the-gift-of-our-weak-brains/JohnvonNeumann-LosAlamos.gif" class="right small">}}
 
 According to <u>[The Legend of von Neumann][]</u>, here's what happened when the puzzle was posed to Von Neumann:
 
