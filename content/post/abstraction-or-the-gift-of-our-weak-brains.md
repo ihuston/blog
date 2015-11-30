@@ -124,7 +124,7 @@ How are you, as one of the best and brightest, preparing for the inevitable day 
 
 Let's be honest and empathize that most people who currently have the title of "software developer" are not going to have the time, patience, or talent to wade through spaghetti code with dependencies pointed in the wrong direction, with poorly-named variables, and with poor test coverage.
 
-Worse, though, is the example being set for people who are new to the craft. There's a self-perpetuating cycle here, particularly given that very few developers have any sort of exposure to the "team sport" that is growing and maintaining large software systems. If all I see when I look around is poorly-abstracted software, then are you surprised when I generate code of the same quality?
+Worse, though, is the example being set for people who are new to the craft. There's a self-perpetuating cycle here, particularly given that very few developers have any sort of exposure to the "[team sport](/post/welcome/)" that is growing and maintaining large software systems. If all I see when I look around is poorly-abstracted software, then are you surprised when I generate code of the same quality?
 
 (This, by the way, is why I feel strongly that most colleges and universities are cheating their CS grads by not preparing them for a career working in large, complex teams on large, complex projects. Again, this is for another blog post.)
 
@@ -165,7 +165,7 @@ __We rotate frequently between teams__, meaning that we're almost always teachin
 
 Generally speaking, these practices lower the threshold at which our brains might otherwise naturally seek for better abstractions. This is good!
 
-These practices are even more important for people with greater computational abilities. __This is actually the reverse of most people's intuition__, which is (rather derogatorily) that Smart People don't need to follow the same practices as Ordinary People. Don't fall into this trap around testing and abstractions. If you think you're so smart, then consider Abstraction to be an act of _noblesse oblige_ for the rest of us.
+These practices may be more important for people with greater computational abilities. __This is actually the reverse of most people's intuition__, which is (rather derogatorily) that Smart People don't need to follow the same practices as Ordinary People. Don't fall into this trap around testing and abstractions. If you think you're so smart, then consider Abstraction to be an act of _noblesse oblige_ for the rest of us.
 
 
   [knuth]: https://en.wikipedia.org/wiki/Donald_Knuth
@@ -176,7 +176,7 @@ These practices are even more important for people with greater computational ab
 
 You get to choose what you spend your brain's CPU cycles on. Well-abstracted code is easier to reason about and safer to change. If your brain is occupied with poorly-abstracted details, you're going to miss opportunities for creative problem solving, and you won't get the flashes of insight that can be critical to solving problems well.
 
-Smart people who claim to not need practices are often productive ... alone. But software (and life) is a team sport. So even if you won't find good abstractions for your own sake, do it for your fellow developers. They'll thank you for it.
+Smart people who claim to not need practices are often productive ... alone. But software (and life) is a [team sport](/post/welcome/). So even if you won't find good abstractions for your own sake, do it for your fellow developers. They'll thank you for it.
 
 Our brains are naturally limited. This can be a curse, or it can be a gift, depending on how you look at it.
 
