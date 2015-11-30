@@ -59,11 +59,9 @@ I'm pretty sure everyone else thought I was dumb, too. I needed study partners, 
 
 This was a huge source of pain and stress for me. I had never failed at anything before. And so I struggled, _hard_, to find a better way to learn these concepts and internalize their lessons. I spent a lot of time and effort trying (and discarding) various paradigms to intuitively explain complex systems.
 
-Eventually, I hit a tipping point. Once I modeled the abstractions appropriately in my mind, I was able to reason about complex behavior as well or better than my peers. I suddenly started getting flashes of insight, and was able to leverage previous abstractions when solving take-home problems.
+Eventually, for any domain, I hit a tipping point. Once I modeled the appropriate abstractions in my mind, I was able to reason about complex behavior as well (or better) than my peers. I started getting flashes of insight, and was able to leverage previous abstractions when solving take-home problems.
 
-This felt like a bit of a superpower. It felt like I had finally modeled the problem properly in my brain, and as a result was able to identify patterns and solve Big Picture problems.
-
-Much later in life, I would read Hofstadter's <u>[Gödel, Escher, Bach][geb]</u> and realize I had metaprogrammed my brain for a particular domain, and it had allowed me to use abstractions as a first-class language for learning and reasoning.
+This felt like a bit of a superpower. Much later in life, I would read Hofstadter's <u>[Gödel, Escher, Bach][geb]</u> and realize I had metaprogrammed my brain for a particular domain, which allowed me to use abstractions as a first-class language for learning and reasoning. As a result I was able to identify patterns more quickly and use intuition to solve problems more easily.
 
 Why did I do this, when some people with higher IQs were perfectly capable of it, but didn't appear to be doing it? __Was it because the lack of abstractions caused more pain for me than for them?__
 
