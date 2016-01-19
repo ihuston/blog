@@ -12,18 +12,21 @@ short: |
 title: Pairing for Data Scientists
 ---
 
-He ya! Happy 2016!! I am two months old now at Pivotal Labs Data Science Team at London and the journey so far has been nothing but exciting. I have been introduced to new working methodologies to make data science (DS) agile. For those thinking that there goes another vague buzzword...
+He ya! Happy 2016!! It's now two months since I started working on the Pivotal Labs Data Science Team in London and the journey so far has been nothing but exciting. I have been introduced to new working methodologies to make data science (DS) agile. For those thinking that there goes another vague buzzword...
 
-To me, data science is essentially getting to know your own venture; knowing it better by delving deeper into all the information you have or can have, discovering its nitty-gritty and using this valuable piece to influence your future affluently. Others might be inquisitive about how Data Science and agile are being used together. I was too when I first interacted with the DS EMEA team in London.
+[XXXX Broad message about pairing XXXX]
+We've found that pairing works well with data science, and I wanted to share some of my experiences and tips for getting started with pair data science.
+
+To me, data science is essentially getting to know your own venture; knowing it better by delving deeper into all the information you have or can have, discovering its nitty-gritty and using this valuable information to influence your future affluently. Others might be inquisitive about how Data Science and agile are being used together. I was too when I first interacted with the DS EMEA team in London.
 
 ## Data Science the _Agile_ way
 Data Science can be fairly broad and exploratory. In such an environment, an agile way can help to iterate and speed up process and help us to not get lost in the vast problem search space. The DS team at Pivotal recently became a part of Pivotal Labs and we have been trying to adopt the Labs culture and techniques from which data science could benefit.
 
-We are integrating classic labs techniques like having daily stand-ups, regular retro, pivotal tracker, pair programming, continuous integration and test-driven development in our day-to-day work. I won’t say everything has fallen into place yet; we are still exploring how (or to what level) these techniques fit the data science world. This time, I’ll discuss my experience with Pair Programming in data science so far.
+Pivotal Labs practices a form of Extreme Programming (XP) which includes daily stand-ups, regular retrospectives, pair programming, continuous integration and test-driven development in our day-to-day work. On the data science team we're starting to adopt some of these practices ourselves. I won’t say everything has fallen into place yet; we are still exploring how (or to what level) these techniques fit the data science world. This time, I’ll discuss my experience with Pair Programming in data science so far.
 
 ## Pair Programming
 {{< responsive-figure src="/images/pairing_ds_logo.png" class="right small" >}}
-Hmmmm… Pair Programming is exactly what it sounds. If you ever get a chance to visit the Labs office you will see two developers sharing a big desk space and working on two mirrored screens simultaneously. Sounds interesting and a bit challenging…. Honestly when I first saw this alien style of programming I had concerns about how productive it could be in a DS environment. Yes we have to code as data scientist! For those who didn’t know, DS involves programming right from the initial feature creation and exploratory phase to model development and its operationalization.
+Hmmmm… Pair Programming is exactly what it sounds. If you ever get a chance to visit the Labs office you will see two developers sharing a big desk space and working on two mirrored screens simultaneously. Sounds interesting and a bit challenging…. Honestly when I first saw this alien style of programming I had concerns about how productive it could be in a DS environment. Yes we have to code as data scientists! For those who didn’t know, DS involves programming right from the initial feature creation and exploratory phase to model development and its operationalization.
 
 ### Few Handy Tips
 * Pairing is energy intensive and will be exhausting. Take frequent breaks.
@@ -33,15 +36,16 @@ Hmmmm… Pair Programming is exactly what it sounds. If you ever get a chance to
 * Think aloud.
 * While pairing remotely, make sure you have a seamless Internet connection. Trust me it pairing can get fairly frustrating otherwise.
 * If you are new to a certain language, brush it up before hand. In case both you and your pair is in doubt, Google comes to rescue :)
+* [XXXX More DS specific tips XXXX]
 
 ### Hoops to Jump through
-When you start on a DS use case your objective is fairly broad. You need to spend a lot of time to find the right way to materialize the objective. You have to flare and focus repeatedly between coming up with a more definite objective and shipping it as an end product.
+When you start on a DS use case your objective is fairly broad. You need to spend a lot of time to find the right way to materialize the objective. You have to 'flare and focus' repeatedly between coming up with a more definite objective and shipping it as an end product.
 
-I had my doubts about how pairing would fit this flare and focus process. It’s not equivalent to pairing in a software engineering environment where the goals are more definitive and the pair can work together in introducing a new feature to an interface. During DS flaring, one might come with a number of problems and consequently an even larger number of ways to tackle them; having another person in the entire development process might make this phase intense and long because different people can have different ways to approach a problem.
+I had my doubts about how pairing would fit this flare and focus process. It’s not equivalent to pairing in a software engineering environment where the goals are more defined and the pair can work together in introducing a new feature to an interface. During DS flaring, one might come with a number of problems and consequently an even larger number of ways to tackle them; having another person in the entire development process might make this phase intense and long because different people can have different ways to approach a problem.
 
-For DS, there is no best tool for the task at hand. If one DS is comfortable using python that might not necessarily be the same for his/her pair. Although, this is a great opportunity to expand one’s skill set but it might be a little disconcerting to run to Google for some basic syntax check with your pair watching over you!
+For DS, there is no best tool for the task at hand. If one DS is comfortable using Python that might not necessarily be the same for his/her pair. Although, this is a great opportunity to expand one’s skill set but it might be a little disconcerting to run to Google for some basic syntax check with your pair watching over you!
 
-In general another hoop a pair might come across is when the two individuals pairing have different levels of expertise. I didn’t know how daunting an experience it would be for a newbie to code in this environment or how frustrating could it be for the experienced one to trying to get the noobie up to speed.
+In general another hoop a pair might come across is when the two individuals pairing have different levels of expertise. I don’t know how daunting an experience it would be for a newbie to code in this environment or how frustrating could it be for the experienced one to trying to get the noobie up to speed.
 
 ### Day 3 _@Pivotal_ and henceforth..
 I started pairing with Ian, a Senior DS in my team and started jumping through these hoops. He helped me get comfortable with the process in my first few weeks. In the exploratory phase, it actually turned out that more the number of heads brainstorming about a problem, the faster it is to come up with a variety of routes and then narrowing it down to the most preferred one.
